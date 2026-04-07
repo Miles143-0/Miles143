@@ -1,0 +1,17 @@
+// Object Orientation, Relationships between Classes //
+
+These notes are directly associated with file ComputerProblem-Solving.txt
+
+
+Notes:
+	An Object is a thing or entity that makes sense within the context of the problem.
+	A group of similiar objects is described by an object class, or class, a class
+	contains fields that represent the properties and behaviors of the class. A method 
+	is a named algorithm that manipulates the data values in the object. An object can
+	relate to another in three ways a (the relationship itself is called...)containment
+	(part-of, or contains),an inheritance(is-a), and a collaboration. In a collaboration
+	all classes can collaborate with one another, even those related through inheritances 
+	A super-class is a class being inherited from, a derived class is a class doing the 
+	inheriting. Classes form a inheritance heirarchy, the lower the object the more specialized it is.
+	An Object-Oriented design is based on looking for the objects in the problem rather that 
+	tasks to be solved.
