@@ -1,5 +1,9 @@
 // The Conslusion //
 
+Alan Touring: 5/1/2026 5:36PM Church-Turing thesis,
+Alan Touring awarded the Order of the British Empire in 1945
+	Turing&Alonzo Church:lambda calculus
+
 
 
 Limitations of computing:	
@@ -213,7 +217,7 @@ Limitations of computing:
 							Big-O Analysis:	
 									Common Big-O Notations:
 												O(1) - Constant Time Complexity
-												O(log n) - Lagarithmic Time Complexity
+												O(log n) - Logarithmic Time Complexity
 												O(n) - Linear Time Complexity
 												O(n log n) - Linearithmic Time Complexity
 												O(n^2) - Quadratic Time Complexity
@@ -267,3 +271,83 @@ Limitations of computing:
 										//				Input size:	100000 - Time: 89012345 ns
 										// 				Input size:	1000000 - Time: 901234567 ns
 										
+										Logarithmic Time Complexity example:
+										//				function performLogarithmicOperation(n) {
+										//					let steps = 0;
+										//					while (n > 1) {
+										//						n = Math.floor(n / 2);
+										//						steps++;
+										//						console.log('Current value: ${n}');
+										//					}
+										//					console.log('Total steps (0(log n)): ${steps}');
+										//					}
+										//					const inputNumber = 1234; // <---- modify this line
+										//					performLogarithmicOperation(inputNumber);
+				
+					Big-O Analysis:
+							Order of magnitude: or Big-O notation is a mathematical notation order of operation, the order of magnitude of a function is identified
+								with the term in the function that increases fastest relative to the size of the problem, for Example:
+																					ƒ(N) = N⁴ + 100N² + 10N + 50
+								
+								then ƒ(N) is of order N⁴— or, in Big-O notation, O(N⁴). That is for large values of N, some multiple of N⁴ dominates the function for sufficiently
+								large values of N.
+
+				Common Orders of Magnitude:
+								1. O(1) is called bounded time
+								2. O(log₂N) is called logarithmic time
+								3. O(N) is called linear time
+								4. O(N log₂N) is called N log₂N time
+								5. O(N²) is called quadratic time O(N^2)
+								6. O(2ⁿ) is called exponential time O(2^N)
+								7. O(n!) is called factorial time O(n!)
+					O(1), O(log₂N), O(N), O(N log₂N), O(N*N),...2ⁿ, N
+								
+								1. Assigning a value to іth element in an array of N elements is O(1), because an element is accessed directly from its index.
+								2. Finding a value in a list of sorted elements using the binary search algorithm is O(log₂N).
+								3. Printing all the elements in a list of N elements is unsorted and O(N).
+								4. Applying a logarithmic algorithm N times unsorted to sorted , Quicksort, Heapsoort, Mergesort, in O(N log₂N) time.
+								5. Applying a linear algorithm N times, most simple sorting algorithms are O(N²).
+								6. The fable of the King and the Corn demonstrates an exponential time algorithm, where the size of the problem is kernel of corn;
+									exponential times increase dramically in relation to the size of N.
+								7. O!=1, n!=n·(n-1)·(n-2)·...·1, each factorial is built from the one before it, so start with a number n, multiply by the factorial
+									of n-1 until you reach O!=1
+
+								All polynomial-time algorithms are defined as being in Class P.
+								Algorithms whose order of magnitude can be expressed as a polynomial-time algorithm. A polynomial is a sum of two or more algebraic terms,
+								each of which consists of a constant mulitplied by one or more variables rasied to a nonnegative integral power.
+								
+							Alan Touring: 
+									The statement 'anything that is intuitively computable can be computed by a Touring Machine' is known as the Church-Touring thesis,
+									named for Touring & Alonzo Church: lambda calculus. Church-Touring thesis is that if we can find a problem for which a turing-machine 
+									can be proven NOT to exist, then the problem must be unsolvable. Alan Touring in 1936 worked with Church and von Neumann as a mathmetician,
+									then Touring was awarded the Order of the British Empire in 1945, and throughout continued research in decideability and quatum theory.	
+
+					Halting Problems:	
+							Given a program and a inout to the program, determine if the program will eventually stop with this input.	
+NOTES:
+	You could use a linear equation in/while a boolean equation, becuase 0, 0 is counted as a solution, but
+	any math while trying to solve for a solution (even if a solution is found deosn't count as a solution,
+	unless it's EXACT solution, not an infinite or (0,0). Because of this, the solution could be used as a 1, 0.
+	and this is the reason boolean could be used parallel with/in/conjunction, bilateral,together, as, about with
+	finit math. 
+	IPng (1993-1994), RFC-1883(DEC 1995), RFC-2460(1998)=IPv6; Formal Protocol created 1995, IPv6 uses 128 encryption,
+	with about 340 undecillion possibilities.
+********Reasonable time=Polynomial-time
+	TSP the traveling salesman problem,
+					Given: A list of cities
+					The distance between every pair of cities.
+					Find the shortest possible  route that visits each city exactly one & returns to the starting point.
+
+					ex:	
+						1. Delivery Routing
+						2. Circuit Board Design
+						3. DNA Sequencing
+						4. Logistics & Supply chains
+
+						ex2:
+							1. Nearest neighbor
+							2. Genetic algorithms
+							3. Simulated annealing
+
+	Inta-computer data transfers.
+	Polynomial-time algorithms are those algorithms whose Big-O complexity can be expressed as a polynomial in size factor.
