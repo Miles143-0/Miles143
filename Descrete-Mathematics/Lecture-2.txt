@@ -1,0 +1,152 @@
+// Lecture-2 //
+
+
+
+Basic Concepts of Combinatorics:
+
+I) How many ways can we pick 5 from 1-10? There are 4 ways to answer this depending on 2 factors,
+
+1. Does order matter?
+2. Can you repeat numbers?
+
+If order matters and repetition is allowed, we call that a sequence.
+If order matters and repetition is not allowed, this is called an arrangement.
+If repetition is not allowed, but order does not matter, this is called a subset
+	or combination.
+If order does not matter and repetition is allowed, is spoke of later on y'all.
+
+II) Rule of sum and product:
+
+A. rule of of sum states that if an action is performed by making A choices or B
+	other choices, then it can be performed A+B ways. 
+	Ex:
+		If i have 4 short sleeve shirts, and 6 long sleeve shirts then I have 10
+		choices of shirts.
+
+B. The rule of product states that if an action can be performed by making A choices followed
+	by B choices, then it can be performed AB ways.
+
+Ex:
+	1. if i have 10 shirts and 8 pants, then i have 80 different outfits.
+	2. if a label  consists of a letter(A,B, or C) followed by a number (from 1 to 5),
+		then there are 3x5=15 labels. 
+	3. Each card in a deck has 13 values (from ace to king) and a choice of 4 suits, so there
+		are 13x4=52 cards in a deck.
+	4. I general, n!(pronounced "n factorial") is the number of ways arrange n objects. This is
+		also known as a permutation.
+
+III) Another extremely important rule in combinatorics is the binomial coefficient.
+
+	A. Common notation is C(𝑛,𝑘), where C stands for choices or combinatorics.
+	B. There are many ways to define (𝑛𝑘)
+
+	1.  if the number of ways to choose k objects from n, where order is not important and 
+		repetition is not allowed.
+		
+	Ex:
+		there are C(52,5) ways to create a 5-card poker hand.
+	
+	2. officially C(𝑛,𝑘) is the number of size-𝑘 subsets(# of ways to pick "C") of the set
+	C. (n, k)=n!/k!(n-k)! 
+
+IV) Poker hands are a natural application for the binomial coefficient.
+	
+	A. The number of 5-card poker hands is (52,5)=2,598,960.
+	B How many full houses (3 of one value and 2 of another)? There are 13 choices for which 
+		card value is tripled, then 12 choices for which card value is doubled, then (4,3) ways to
+		assign suits to the tripled value, then (4,2) ways to assign suits to the doubled value.
+*********************************************************************************************************
+*********************************************************************************************************
+First lets look at this an a way thats understandable:
+							
+							I) Lets look at this as if it were ice cream,
+							now, lets say we choose a flavor Chocolate, 
+							Vanilla, Strawberry.
+
+							Next, lets choose two scoops,
+							so, Chocolate, Vanilla, Strawberry
+
+							Chocolate, Vanilla
+							Vanilla, Chocolate
+							Chocolate, Strawberry
+							Strawberry, Chocolate
+							Vanilla, Strawberry
+							Strawberry, Vanilla
+							Vanilla, Vanilla
+							Chocolate, Chocolate
+							Strawberry, Strawberry
+
+							so this is 9 combinatorions.
+
+							Next, Arrangements vs Selections
+							Arrangments(Permutations): Order matters.
+							Selection(Combination): Order doesnt matter.
+
+							II) Rule of sum and product
+
+							You go to an ice cream shop you can choose either a cone or a cup.
+
+							Next, you count the options for each.
+							So, Cone: 3 options
+							    Cup: 2 options
+								 	3+2=5 choices total
+
+							A) Rule of product,
+
+									Cone flavors 3(chocolate, vanilla, strawberry)
+									Toppings 2 (sprinkles, chocholate syrup)
+
+									Chocolate + Sprinkles
+									Chocolate + Chocolate syrup
+									Vanilla + Sprinkles
+									Vanilla + Chocolate syrup
+									Strawberry Sprinkles
+									Strawberry + Chocolate syrup
+
+																		Sum: “Cone OR cup → add options”
+									Product: “Flavor AND topping → multiply options”
+
+									3 flavors·2 toppings = 6 combos
+
+							B) Binomial Coefficient
+									
+									Chocolate(C), Vanilla(V), Strawberry(S). You want 
+									to pick 2 flavors for a cup. Order doesn’t matter.
+
+									Step 1: list all combonations,
+									Flavor 1,			Flavor 2
+									C				V
+									C				S
+									V				S
+									
+//									Count them 3 combinations --> this is exactly (3,2)=3
+									Step 2: Add a 4th flavor (Mint(M))
+									Now the flavors are C, V, S, M and you will still only
+									choose 2,
+									C+V
+									C+S
+									C+M
+									V+S
+									V+M
+									S+M
+									
+									So, Count them: 6 combinations --> (4,2)=6
+
+									Step 3: The general ideal visually:
+									C	V	S	M
+									|	|	|	|
+									|	|	|	|
+									C-V		C-S	C-M
+									VS		VM
+									SM
+	
+									Each line connecting two flavors is one 
+									unique combination, no one line is repeated	
+									becuase order doesnt matter.
+			
+									Step 4: Connect the formula
+									Here: n = 4, k = 2
+
+									(4 choose 2) = 4!/(2!*(4 - 2)!) 
+             								= 24/(2*2) 
+             								= 6 different combinations of 2 flavors from 4.
