@@ -1,0 +1,23 @@
+// Lecture 1 JOM //
+
+
+
+The Big Picture:
+		The laws of nature are written in calculus and differential equations. Calculus tells us how to model everything from the motion of pendulums to 
+//		galaxies. Mathematics is often taught as an exercise of disciplined and creative thinking. We will learn why 0.999999 going on forever is actually
+//		equal to 1, not just close, but equal to it. We will understand sin²+cos²=1, and we will be able to follow the Pythagorean theorem, knowing its true.
+//		we will learn some beautiful numbers like е, pi, and i. i is and imaginary number, whose square is equal to -1, we will also look at some beautiful
+//		formulas such as e^πi+1=0, this single equation uses e, pi, i, 1 and 0, arguably the most important numbers in mathematics. We will learn Pascals 
+//		triangle, Fibonacci numbers, we will learn about infinity ∞. We will see two ways of the sum of a series of fractions whose dominators are powers
+//		of 2, such as 1 + 1/2+1/4+1/8+1/16+...is equal to 2. We will look at a simplier set called harmonic series. We will learn why √2 is irrational, and
+		cannot be written as a fration with an integer(a whole number) in both the numerator and the dominator. Second half of the book we will learn about
+		trigonometry, including sines, cosines, tangents, triangles, and circles also we will learn about the imaginary number i whose square is -1. We'll 
+		think of of the sine function in terms of the unit circle that is given in angle a; the sine function will be the y coordinate of the point(x,y)
+		on the unit circle. Then we will look at the sine function from an algebriac stand point. 
+
+
+
+Notes:
+	Sine (“sin”) tells you how high something is during circular or wave-like motion.
+// 	e^πi+1=0, this single equation uses e, pi, i, 1 and 0, arguably the most important
+	function in mathematics.

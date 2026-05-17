@@ -1,0 +1,176 @@
+// Lecture 2 JOM //
+
+Carl Friedrich Gauss(1777-1855)-trianglular numbers	𝑛(𝑛+1), 2 
+Think of rows of 1 dot, 2 dots, 3 dots,...
+
+
+Joy Of Numbers:
+		In everyday mathematics, we use the base-10 number system, Hindu-Arbiac system.
+		Base-10 is called the decimal system, base-10 uses 10 digits. The key idea is 
+		place value: each position is worth power of 10. Every place to the left is 10 
+		times bigger than the one before it.
+			
+			Ex:
+
+	
+				Lets say we are collecting/counting rocks:
+
+				Step 1 Count normally 1 rock, 2 rocks, 3 rocks, 4 rocks,...10 rocks ect...
+					But carrying lots of rocks is too difficult, we make a rule Everytime
+				 	we get 10 rocks, we place them into a bag.
+
+				Step 2 1 rock = 1 rock,
+					10 rocks = 1 bag.
+
+				Step 3 We are having trouble carrying bags of rocks,
+					so we create a rule when we get 20 bags of rocks
+					we trade it for a crate.
+
+					Now, 1 rock = 1 rock // 10⁰ rocks (starting level)
+					     10 rocks = 1 bag/10 rocks // 10¹ rocks  (1 group of rocks)
+					     10 bags = 1 crate/100 rocks // 10² rocks (10 groups of rocks)
+					     10 crates = 1 truck/1000 rocks // 10³ rocks (10 groups of rocks)
+
+		Lets look at Base-8:
+					Step Count normally
+					Step 2 1 rock = 1 rock
+						8 rocks = 1 bag
+						8 bags = 1 crate
+
+					Step 3 create rule to make life easier("bundle")
+						8 rocks = 1 bag/8 rocks
+						9 rocks = 1 bag remainder of 1 rock
+						10 rocks = 1 bag remainder of 2 rocks
+						..
+						15 rocks = 1 bag remainder of 7 rocks
+						16 rocks = 2 bags remainder of 0
+
+							So, 8 bags = 8·8 rocks= 64 rocks
+					    
+					    So, 64 rocks = 1 crate, remainder 0
+						65 rocks = 1 crate + 1 rock
+						70 rocks = 1 crate + 6 rocks
+						100 rocks (base-10) = 1 crate + 36 rocks (because 64+36)
+
+				
+		Hexidecimal FADE:
+				FADE:
+					gradually changing from one color to another. 
+				//	so, #FF0000 -> #BF003F -> #7F007F -> #3F00BF -> #0000FF
+					Fades from red to blue
+				Note:	00-FF which is 0-255. F·16³+A·16³+D·16+E·1
+
+					Hexidecimal uses base-16, the binary system uses base-2 basically substitutes 
+					each power  for the power of 2. //
+
+					Ex:
+				//		12=1·2³+1·2²+0·2+0·1
+							
+						substituting a 1 for each power of 2,we get 1100(base-2)
+
+					Ex:
+						64=1·2⁶+0·2⁵+0·2⁴+0·2³+0·2²+0·2¹+0·2°
+
+					Ex:
+					
+					Hexidecimal systems use 10 digits, instead we will use 16 digits. Digits 0-9,
+					A,B,C,D,E,F, which repersent 10,11,12,13,14,15.
+
+					42=2·16¹+10·16° 				2A₁₆=42₁₀ <--in hexidecimal
+
+					66=42₁₆,
+				so, 	42₁₀= four 10s + two 1s	}
+								} the same exact equation,
+					42₁₆= four 16s + two 1s } just base swapping.
+
+					42₁₀=4·10+2(base-10)
+					42₁₆=4·16+2(base-16)
+
+					Whats stays the same is the symbols 4 and 2; What changes, the place value in 
+					base-10, the 4 means 4, 10s in base-16, the 4 means 4, 16s so using the power 
+					of ten or sixteen. 
+
+					Ex:
+						911,
+						so,	911₁₀=911
+							911₁₆=2321₁₀
+							 911₈=4421₈
+
+					BASE-10 9·10²+1·10¹+1·10°
+								911
+					BASE-16 9·16²+1·16¹+1·16°
+								2321
+
+					BASE-8 4·8³+4·8²+2·8¹+1·80
+								4421
+
+		Triangular numbers:
+				
+				Ex:
+					T𝑛=2𝑛(𝑛+1)
+					T₁=1
+					T₂=3
+					T₃=6
+					T₄=10
+					T₅=15
+					T₆=21 -> slightly bigger than 20, 20 lies between T₅-T₆
+	
+					Express 20 as a sum of the triangle,
+					then take 20 minus the largest number so 15 and 	20-15=5
+					then take 5 minus the largest number again so 3		 5-3=2
+					then take 2 minus the largest number again so 1		 2-1=1
+
+					so it is safe to say 20=T₅+T₄+T₃+T₂+T₁
+
+					When minusing/breaking down look at the triangle like you cannot use
+					a larger number to subtract, but the largest number possible. Keep in
+//					mind our goal is to peel off the numbers one at a time until the remainder
+					is zero.
+
+					Ex:
+						Whats the sum of all the numbers in a multiplication table?
+						T₀=1
+						T₁=55
+						T₂=110
+						T₃=165
+						T₄=220
+						T₅=275
+						T₆=330
+						T₇=385
+						T₈=440
+						T₉=495
+						T₁₀=550
+						Row 2= 1-10
+							the sum of which is 55, 5 pairs of 11(or the triangle number formula
+													(1+2+3,..+10)/2=55 or 55
+						Row 3= 2-20(even numbers only)
+								which is twice the numbers 1-10
+													(2+4+6,..+20)/55²=110
+						Row 4= 4,8,12,..,40				
+								which is twice the numbers 4-40(·4)	(4,8,12,..+40)/55³=220															//
+
+				notes:
+//					divide = "÷"(obelus), ":"(colon), "/"(slash/solidus)
+					When converting base-10 to base-16 the decimal will be different, Because we
+					are using powers of ^16 instead of powers of ^10.
+
+				*****	Here's a question you probably haven't thought of in a long time, 'Why should a
+				*****	negative number multiplied by a negative number equal a positive number?' The
+					answer is based on 'distributive law'; which says a(b+c)=(a·b)+(a·c), taking 
+					something negative times is like reversing the direction, so if one negative 
+					flips direction once, a second negative flips it back to positive, Ex: starting
+					at 0, going right equals positive/going left equals negative. Multiply by a 
+					negative equals turn around, Multiply by another negative equals turn around
+					again. Negative·Postive=Negative, Negative·Negative=Positive. This means 
+					mnemonic. (a device such as a pattern of letters, ideas, or associations that 
+//					assists in remembering something). Ex: if you square any number ending in 5
+				*****	the answer will always end in 25.													//
+					10₁₀=A₁₆
+					15₁₀=F₁₆
+					26₁₀=1A₁₆
+					42₁₀=2A₁₆
+					66₁₀=42₁₆
+
+					16²=256
+					16¹=16
+					16°=1																	//
